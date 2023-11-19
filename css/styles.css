@@ -86,11 +86,12 @@ body {
 .page-navigation {
     display: flex;
     gap: 76px;
+    align-items: center;
 }
 
 .menu {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .logo {
@@ -107,6 +108,7 @@ body {
     display: block;
     padding-top: 25.5px;
     padding-bottom: 25.5px;
+    margin-right: 76px
 }
 
 .logo-header-color {
@@ -171,7 +173,7 @@ body {
     line-height: 1.07; /* 107.143% */
     letter-spacing: 0.02em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
@@ -187,8 +189,11 @@ body {
     letter-spacing: 0.04em;
     background: #4D5AE5;
     padding: 16px 32px;
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    height: 56px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -198,6 +203,12 @@ body {
 .hero-button:focus {
     background: #404BBF;
 }
+
+/* ----- BENEFITS ----- */
+
+/* .benefits-section {
+    padding-bottom: 114px;
+} */
 
 .visually-hidden {
     position: absolute;
@@ -211,12 +222,6 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden; 
-}
-
-/* ----- BENEFITS ----- */
-
-.benefits-section {
-    padding-bottom: 114px;
 }
 
 .benefits-list {
@@ -299,11 +304,15 @@ body {
 }
 
 .logo-footer {
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.logo-footer-color {
     color: #F4F4FD;
 }
 
 .text-footer {
     color: #F4F4FD;
     width: 264px;
-    margin-top: 18px;
 }
