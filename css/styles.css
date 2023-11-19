@@ -1,6 +1,14 @@
-ul {
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
     list-style-type: none;
-  }
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
   
 a {
     text-decoration: none;
@@ -9,12 +17,29 @@ a {
 button {
     cursor: pointer;
 }
+
+img {
+    display: block;
+    max-width: 100%, 
+    height: auto;
+}
   
 
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #ffffff
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;   
+    margin: 0 auto;
 }
 
 .section-title {
@@ -25,6 +50,9 @@ body {
     line-height: 1.11; /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
 }
 
 .title-item {
@@ -33,6 +61,7 @@ body {
     font-weight: 500;
     line-height: 1.2; /* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .text {
@@ -40,6 +69,28 @@ body {
     font-weight: 400;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
+}
+
+
+/* ----- HEADER ------ */
+
+.header-section {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation {
+    display: flex;
+    gap: 76px;
+}
+
+.menu {
+    display: flex;
+    column-gap: 40px;
 }
 
 .logo {
@@ -53,20 +104,29 @@ body {
 }
 
 .logo-header {
+    display: block;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+
+.logo-header-color {
     color: #2E2F42;
 }
 
 .menu-link {
+    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #404BBF;
+    color: #404BBF;
 }
 
 .menu-link:active {
@@ -74,11 +134,19 @@ body {
     color: #404BBF;
 }
 
-.address-list {
+.address-header {
     font-style: normal;
 }
 
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 .address-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #434455;
 }
 
@@ -87,8 +155,12 @@ body {
     color: #404BBF;
 }
 
-.hero {
+/* ----- HERO ----- */
+
+.hero-section {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -99,6 +171,10 @@ body {
     line-height: 1.07; /* 107.143% */
     letter-spacing: 0.02em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 496px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button {
@@ -110,6 +186,12 @@ body {
     line-height: 1.5; /* 150% */
     letter-spacing: 0.04em;
     background: #4D5AE5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button:hover,
@@ -117,25 +199,103 @@ body {
     background: #404BBF;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; 
+}
+
+/* ----- BENEFITS ----- */
+
+.benefits-section {
+    padding-bottom: 114px;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-item .benefits-text {
+    margin-top: 8px;
+    display: block;
+    width: 264px;
+}
+
+/* ----- OUR TEAM ----- */
+
 .team-section {
     background-color: #F4F4FD;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-item {
     background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
 }
 
-.title-card {
+.team-photo {
+    margin-bottom: 32px;
+}
+
+.team-title-card, .team-text-card {
     text-align: center;
 }
 
-.text-card {
-    text-align: center;
+/* ----- OUR PORTFOLIO ----- */
+
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
 }
 
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+    width: 360px;
+    padding-bottom: 32px;
+    border: 1px solid #E7E9FC;
+}
+
+.portfolio-img {
+    margin-bottom: 32px;
+}
+
+.portfolio-text-card, .portfolio-title-item {
+    margin-left: 16px;
+}
+
+
+/* ----- FOOTER ----- */
 
 .page-footer {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-footer {
@@ -144,4 +304,6 @@ body {
 
 .text-footer {
     color: #F4F4FD;
+    width: 264px;
+    margin-top: 18px;
 }
