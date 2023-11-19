@@ -42,36 +42,6 @@ body {
     margin: 0 auto;
 }
 
-.section-title {
-    color: #2E2F42;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11; /* 111.111% */
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-}
-
-.title-item {
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2; /* 120% */
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
-
-.text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
-    letter-spacing: 0.02em;
-}
-
-
 /* ----- HEADER ------ */
 
 .header-section {
@@ -224,18 +194,46 @@ body {
     overflow: hidden; 
 }
 
+.title-item {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02em;
+}
+
 .benefits-list {
     display: flex;
     gap: 24px;
 }
 
 .benefits-item .benefits-text {
-    margin-top: 8px;
     display: block;
-    width: 264px;
+    max-width: 264px;
 }
 
 /* ----- OUR TEAM ----- */
+
+.section-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
 
 .team-section {
     background-color: #F4F4FD;
@@ -251,15 +249,14 @@ body {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 32px;
+    /* display: flex;
+    flex-direction: column; */
 }
 
-.team-photo {
-    margin-bottom: 32px;
+.team-item-description {
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
 }
 
 .team-title-card, .team-text-card {
@@ -276,23 +273,24 @@ body {
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-items: flex-start;
     flex-shrink: 0;
 
     width: 360px;
-    padding-bottom: 32px;
-    border: 1px solid #E7E9FC;
+    /* border: 1px solid #E7E9FC; */
 }
 
-.portfolio-img {
+.portfolio-item-description {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+/* .portfolio-img {
     margin-bottom: 32px;
-}
-
-.portfolio-text-card, .portfolio-title-item {
-    margin-left: 16px;
-}
+} */
 
 
 /* ----- FOOTER ----- */
