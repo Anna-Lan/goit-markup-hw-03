@@ -55,7 +55,6 @@ body {
 
 .page-navigation {
     display: flex;
-    gap: 76px;
     align-items: center;
 }
 
